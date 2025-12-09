@@ -1,5 +1,3 @@
--- DROP TABLE IF EXISTS t_pavol_medo_project_SQL_primary_final;
-
 CREATE TABLE t_pavol_medo_project_SQL_primary_final AS
 WITH common_years AS (
     SELECT DISTINCT EXTRACT(YEAR FROM p.date_from)::int AS year
@@ -49,3 +47,4 @@ FROM (
     GROUP BY EXTRACT(YEAR FROM p.date_from), pc.name, pc.price_unit, w.avg_wage
 ) final
 ORDER BY year, industry_name, category_name;
+
