@@ -1,5 +1,3 @@
--- DROP TABLE IF EXISTS t_pavol_medo_project_SQL_secondary_final;
-
 CREATE TABLE t_pavol_medo_project_SQL_secondary_final AS
 SELECT
     c.country AS country_name,
@@ -15,3 +13,4 @@ WHERE e.year IN (
     FROM t_pavol_medo_project_SQL_primary_final
 )
 ORDER BY c.country, e.year;
+
