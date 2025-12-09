@@ -49,6 +49,3 @@ FROM (
     GROUP BY EXTRACT(YEAR FROM p.date_from), pc.name, pc.price_unit, w.avg_wage
 ) final
 ORDER BY year, industry_name, category_name;
-
-SELECT *
-FROM t_pavol_medo_project_sql_primary_final AS tpmpspf;
