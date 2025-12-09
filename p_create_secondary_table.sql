@@ -15,6 +15,3 @@ WHERE e.year IN (
     FROM t_pavol_medo_project_SQL_primary_final
 )
 ORDER BY c.country, e.year;
-
-SELECT *
-FROM t_pavol_medo_project_sql_secondary_final AS tpmpssf;
